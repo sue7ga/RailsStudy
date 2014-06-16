@@ -1,2 +1,7 @@
-h1 Home#index
-p Find me in app/views/home/index.html.slim
+h1 登録されている家庭教師の先生一覧
+div class="content" ng-controller="UsersCtrl"
+ div class="content_div"
+  ={{users.email}}
+
+
+= link_to "ログアウト",destroy_user_session_path
